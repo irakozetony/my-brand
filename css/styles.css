@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --purple: #5b0093;
+    --medium-purple: #a81cff;
+    --deep-purple: #291d30;
+    --text-gray: #555555;
+    --text-light-gray: #B7B7B7;
+    --light-purple: #d083ff;
+    --white: #ffffff;
+    --transition: all 0.6s cubic-bezier(0.645,0.045,0.355,1);
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.nav_logo #logo{
+    filter: brightness(0);
+}
+.page_title {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 100px;
+}
+.page_title::after {
+    content: "";
+    width: 500px;
+    height: 1px;
+    background: var(--purple);
+    display: inline-block;
+    margin-left: 50px;
+}
+/* Home Page */
+
+/** nav **/
+.nav_container {
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+.nav_menu .menu_items li {
+    display: inline;
+}
+.menu_items li a {
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 16px;
+    color: var(--purple);
+}
+.menu_items li a:hover {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+/** main content **/
+.main_container {
+    padding: 200px 100px 0 200px;
+}
+main#home_main {
+    display: flex;
+}
+#welcome_text {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--purple);
+}
+#name_text {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--purple);
+}
+#intro_text {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--deep-purple);
+}
+#bio_text {
+    color: var(--text-gray);
+    margin-top: 40px;
+}
+.company_link {
+    color: var(--light-purple);
+    text-decoration: none;
+}
+.company_link:hover{
+    color: var(--medium-purple);
+    transition: var(--transition);
+}
+#cv_cta {
+    display: inline-block;
+    margin-top: 100px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    background: var(--purple);
+    font-weight: bold;
+    padding: 15px 50px;
+}
+
+/* About Page */
+#about_main {
+    padding: 0 70px 0 70px;
+}
+#about_me {
+    display: flex;
+}
+#about_me_image {
+    margin-right: 70px;
+    --webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#about_me_image:hover {
+    filter: none;
+}
+#about_me_text{
+    color: var(--text-gray);
+}
+#skills_section {
+    float: right;
+    margin-top: -40px;
+}
+#skills_section_title,
+#experiences_section_title {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--purple);
+    font-size: 28px;
+}
+#experiences_section_title {
+    text-align: center;
+}
+#skills_section_title::before {
+    content: "";
+    width: 500px;
+    height: 1px;
+    background: var(--purple);
+    display: inline-block;
+    margin-right: 50px;
+}
+#skills_list {
+    margin-top: 28px;
+}
+#skills_list li {
+    display: inline;
+    padding: 15px 30px;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-family: "Courier New", Courier, monospace;
+}
+#experiences_section {
+    clear: right;
+    margin-top: 150px;
+}
+#experiences_showcase {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 650px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: var(--transition);
+}
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+#companies_list {
+    border-left: 1px solid var(--purple);
+    transition: var(--transition);
+}
+#companies_list li {
+    list-style: none;
+    width: 160px;
+    padding: 12px 0 12px 25px;
+    cursor: pointer;
+}
+#companies_list li:hover,
+#companies_list li.active {
+    background: var(--light-purple);
+    color: var(--white);
+    border-left: 3px solid var(--medium-purple);
+    margin-left: -2px;
+    transition: var(--transition);
+}
+.company_work_description{
+    padding: 12px 0px 0px 35px;
+}
+.work_title{
+    font-weight: bold;
+    color: var(--text-gray);
+}
+.work_title a{
+    text-decoration: none;
+    color: var(--light-purple);
+}
+.work_duration{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-light-gray);
+}
+.work_description{
+    padding: 10px 0 0 30px;
+}
+ul.work_description{
+    list-style-type: none;
+}
+ul.work_description > li{
+    text-indent: -5px;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+}
+ul.work_description > li:before{
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: var(--deep-purple);
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+}
