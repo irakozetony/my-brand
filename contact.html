@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/script.js" defer></script>
+        <title>Contact - Irakoze Yves</title>
+    </head>
+
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+            </nav>
+        </div>
+        <div class="main_container mt">
+            <p class="page_title">Contact me</p>
+        </div>
+        <main id="contact_main">
+            <div id="info">
+                <div id="contact_info">
+                    <p id="cta_text_title">I am easy to reach</p>
+                    <p class="contact_link">
+                        <i class="fa-solid fa-phone"></i> Give me a call at
+                        <a href="tel:+250788622754">+250788622754</a>
+                    </p>
+                    <p class="contact_link">
+                        <i class="fa-solid fa-envelope"></i> Send me an email at
+                        <a href="mailto:irakozeyves9@gmail.com"
+                            >irakozeyves9@gmail.com</a
+                        >
+                    </p>
+                </div>
+
+                <ul id="social_links">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="form">
+                <form action="#" id="contact_form">
+                    <div class="input_group">
+                        <div class="first_group">
+                            <label for="first_name">First Name</label>
+                            <input
+                                type="text"
+                                id="first_name"
+                                placeholder="John"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">
+                                    Please enter your first name
+                                </p>
+                            </span>
+                        </div>
+                        <div class="last_group">
+                            <label for="last_name">Last Name</label>
+                            <input
+                                type="text"
+                                id="last_name"
+                                placeholder="Doe"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">
+                                    Please enter your last name
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="first_group">
+                            <label for="mail">Mail</label>
+                            <input
+                                type="email"
+                                id="mail"
+                                placeholder="johndoe@example.com"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">
+                                    Please enter a valid email
+                                </p>
+                            </span>
+                        </div>
+                        <div class="last_group">
+                            <label for="phone">Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+25078862275"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">
+                                    Please enter a valid phone number
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <label for="message">Your message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="100"
+                        rows="10"
+                        placeholder="Leave your message here"
+                    ></textarea>
+                    <span class="error">
+                        <i
+                            class="fa-solid fa-circle-exclamation error-icon"
+                        ></i>
+                        <p class="error_text">Message can not be empty</p>
+                    </span>
+                    <input
+                        type="submit"
+                        value="Send message"
+                        id="submit_button"
+                    />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

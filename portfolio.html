@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/script.js" defer></script>
+        <script src="./js/slide.js" defer></script>
+        <title>Portfolio - Irakoze Yves</title>
+    </head>
+
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+            </nav>
+        </div>
+        <div class="main_container mt">
+            <p class="page_title">Projects</p>
+            <main id="portfolio_main">
+                <div class="project">
+                    <div class="project_thumbnail">
+                        <img
+                            src="./images/thumb_1.webp"
+                            alt="A web page on a computer"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="project_description">
+                        <p class="project_title">Demo Project</p>
+                        <p class="project_details">
+                            This is one of the very first projects that I
+                            developed when learning HTML & CSS. It is a simple
+                            project to demonstrate what I can do with tools as
+                            simple as HTML and CSS.
+                        </p>
+                        <ul class="project_stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <ul class="project_links">
+                            <li>
+                                <a href="https://github.com/irakozetony/tech_upskill_portfolio"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://demoproject-one.netlify.app/" target="_blank"
+                                    ><i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project_thumbnail">
+                        <img
+                            src="./images/thumb_2.webp"
+                            alt="A web page on a computer"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="project_description">
+                        <p class="project_title">Scrum Board App</p>
+                        <p class="project_details">
+                            Scrumboard is an app I developed during my
+                            internship at
+                            <a
+                                href="https://www.linuxjobber.com"
+                                class="company_link"
+                                >Linuxjobber</a
+                            >. I made it using Django and was challenged on
+                            learning how to deploy it on
+                            <a
+                                href="https://aws.amazon.com/"
+                                class="company_link"
+                                >AWS</a
+                            >.
+                        </p>
+                        <ul class="project_stack">
+                            <li>Django</li>
+                            <li>AWS</li>
+                        </ul>
+                        <ul class="project_links">
+                            <li>
+                                <a href="https://gitlab.com/linuxjobber/django-intro"
+                                    ><i class="fa-brands fa-gitlab"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project_thumbnail">
+                        <img
+                            src="./images/thumb_3.webp"
+                            alt="A web page on a computer"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="project_description">
+                        <p class="project_title">Websocket Chat App</p>
+                        <p class="project_details">
+                            This is another chat app I developed during my
+                            internship at
+                            <a
+                                href="https://www.linuxjobber.com"
+                                class="company_link"
+                                >Linuxjobber</a
+                            >. I used django to handle the backend, and used
+                            <a
+                                href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api.html"
+                                class="company_link"
+                                >AWS Websocket API Gateway</a
+                            >
+                            to handle message transmission.
+                        </p>
+                        <ul class="project_stack">
+                            <li>Django</li>
+                            <li>Python</li>
+                            <li>AWS</li>
+                            <li>Websocket</li>
+                        </ul>
+                        <ul class="project_links">
+                            <li>
+                                <a href="https://gitlab.com/linuxjobber/chatapp"
+                                    ><i class="fa-brands fa-gitlab"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+            integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>
