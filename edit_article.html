@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Edit Article - Irakoze Yves</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+                <div class="mobile_menu_icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu_items">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main_container">
+            <div class="form_with_article_header">
+                <p class="small_title">Edit article</p>
+                <a class="link_button" href="./dashboard.html">Cancel</a>
+            </div>
+            <form action="#" class="new_article_form">
+                <label for="article_title">Title</label>
+                <input
+                    type="text"
+                    name="article_title"
+                    id="article_title"
+                    placeholder="New article title"
+                />
+                <label for="article_content">Content</label>
+                <div class="text_editor_header">
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="justifyLeft"
+                    >
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="justifyCenter"
+                    >
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="justifyFull"
+                    >
+                        <i class="fa-solid fa-align-justify"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="justifyRight"
+                    >
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="bold"
+                    >
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="italic"
+                    >
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="underline"
+                    >
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="insertOrderedList"
+                    >
+                        <i class="fa-solid fa-list-ol"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="insertUnorderedList"
+                    >
+                        <i class="fa-solid fa-list-ul"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="insertImage"
+                    >
+                        <i class="fa-solid fa-image"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="text_editor_button"
+                        data-cmd="createLink"
+                    >
+                        <i class="fa-solid fa-link"></i>
+                    </button>
+                </div>
+                <div class="text_editor_content" contenteditable="true" name="article_content" id="article_content"></div>
+                <label for="article_cover"
+                    ><i class="fa-solid fa-arrow-up-from-bracket"></i>Article
+                    cover photo</label
+                >
+                <input
+                    type="file"
+                    id="article_cover"
+                    name="article_cover"
+                    accept="image/*"
+                />
+                <!--                <input type="submit" value="create">-->
+                <a href="./dashboard.html" class="link_button"
+                    ><i class="fa-solid fa-check"></i>save</a
+                >
+            </form>
+        </div>
+        <script src="./js/script.js" defer></script>
+    </body>
+</html>

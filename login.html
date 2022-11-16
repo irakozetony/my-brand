@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/script.js" defer></script>
+        <title>Login - Irakoze Yves</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+                <div class="mobile_menu_icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu_items">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main_container">
+            <div class="page_title">Login</div>
+            <div class="login_page_content">
+                <div class="login_form">
+                    <form action="#">
+                        <div class="first_group">
+                            <label for="user_name">Username</label>
+                            <input
+                                type="text"
+                                name="user_name"
+                                id="user_name"
+                                placeholder="yvestony"
+                            />
+                        </div>
+                        <div class="first_group">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </div>
+<!--                        <input type="submit" value="Login" />-->
+                            <a href="./dashboard.html" class="link_button">Login</a>
+                    </form>
+                </div>
+                <div class="login_illustration">
+                    <img
+                        src="./images/login-page-illustration.svg"
+                        alt="An illustration of a web developer"
+                        width="350"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
