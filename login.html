@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./images/logo.ico" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/script.js" defer></script>
+        <title>Login - Irakoze Yves</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+            </nav>
+        </div>
+        <div class="main_container mt">
+            <div class="page_title">Login</div>
+            <div class="login_page_content">
+                <div class="login_form">
+                    <form action="./dashboard.html" id="login_form">
+                        <div class="first_group">
+                            <label for="mail">Email</label>
+                            <input
+                                type="email"
+                                id="mail"
+                                placeholder="johndoe@example.com"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">
+                                    Please enter a valid email
+                                </p>
+                            </span>
+                        </div>
+                        <div class="first_group">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                            <span class="error">
+                                <i
+                                    class="fa-solid fa-circle-exclamation error-icon"
+                                ></i>
+                                <p class="error_text">Incorrect password</p>
+                            </span>
+                            <i class="fa-solid fa-eye-slash" id="show-hide"></i>
+                        </div>
+                        <input type="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="login_illustration">
+                    <img
+                        src="./images/login-page-illustration.svg"
+                        alt="An illustration of a web developer"
+                        width="350"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
