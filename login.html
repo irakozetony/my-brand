@@ -10,7 +10,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="./js/script.js" defer></script>
-        <title>Home - Irakoze Yves</title>
+        <title>About - Irakoze Yves</title>
     </head>
     <body>
         <div class="nav_container">
@@ -38,29 +38,38 @@
             </nav>
         </div>
         <div class="main_container">
-            <main id="home_main">
-                <div class="main_intro_text">
-                    <p id="welcome_text">Welcome, I am</p>
-                    <p id="name_text">Irakoze Yves</p>
-                    <p id="intro_text">I create amazing software products</p>
-                    <p id="bio_text">
-                        I'm a software engineer currently specializing in
-                        creating amazing web solutions as a full-stack web
-                        developer at
-                        <a href="https://www.andela.com" class="company_link"
-                            >Andela</a
-                        >
-                    </p>
-                    <a href="./files/resume-Yves.pdf" id="cv_cta" download>Download CV</a>
+            <div class="page_title">Login</div>
+            <div class="login_page_content">
+                <div class="login_form">
+                    <form action="#">
+                        <div class="first_group">
+                            <label for="user_name">Username</label>
+                            <input
+                                type="text"
+                                name="user_name"
+                                id="user_name"
+                                placeholder="yvestony"
+                            />
+                        </div>
+                        <div class="first_group">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </div>
+                        <input type="submit" value="Login" />
+                    </form>
                 </div>
-                <div class="main_intro_illustration">
+                <div class="login_illustration">
                     <img
-                        src="./images/landing-page-illustration.svg"
+                        src="./images/login-page-illustration.svg"
                         alt="An illustration of a web developer"
                         width="350"
                     />
                 </div>
-            </main>
+            </div>
         </div>
     </body>
 </html>

@@ -10,7 +10,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="./js/script.js" defer></script>
-        <title>Home - Irakoze Yves</title>
+        <title>New Article - Irakoze Yves</title>
     </head>
     <body>
         <div class="nav_container">
@@ -38,29 +38,16 @@
             </nav>
         </div>
         <div class="main_container">
-            <main id="home_main">
-                <div class="main_intro_text">
-                    <p id="welcome_text">Welcome, I am</p>
-                    <p id="name_text">Irakoze Yves</p>
-                    <p id="intro_text">I create amazing software products</p>
-                    <p id="bio_text">
-                        I'm a software engineer currently specializing in
-                        creating amazing web solutions as a full-stack web
-                        developer at
-                        <a href="https://www.andela.com" class="company_link"
-                            >Andela</a
-                        >
-                    </p>
-                    <a href="./files/resume-Yves.pdf" id="cv_cta" download>Download CV</a>
-                </div>
-                <div class="main_intro_illustration">
-                    <img
-                        src="./images/landing-page-illustration.svg"
-                        alt="An illustration of a web developer"
-                        width="350"
-                    />
-                </div>
-            </main>
+            <p class="small_title">Create article</p>
+            <form action="#" class="new_article_form">
+                <label for="article_title">Title</label>
+                <input type="text" name="article_title" id="article_title" placeholder="New article title">
+                <label for="article_content">Content</label>
+                <textarea name="article_content" id="article_content" cols="30" rows="10"></textarea>
+                <label for="article_cover">Article cover photo</label>
+                <input type="file" id="article_cover" name="article_cover">
+                <input type="submit" value="create">
+            </form>
         </div>
     </body>
 </html>
