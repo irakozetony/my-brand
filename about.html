@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d04a2cf651.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/script.js" defer></script>
+        <title>About - Irakoze Yves</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <a href="./index.html">
+                    <img
+                        src="./images/logo.png"
+                        alt="Yves logo"
+                        id="logo"
+                        width="20"
+                    />
+                </a>
+            </div>
+            <nav class="nav_menu">
+                <div class="mobile_menu_icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu_items">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main_container">
+            <p class="page_title">About me</p>
+            <main id="about_main">
+                <div id="about_me">
+                    <img
+                        src="./images/headshot.webp"
+                        alt="My Head Shot Picture"
+                        width="300"
+                        id="about_me_image"
+                        loading="lazy"
+                    />
+                    <p id="about_me_text">
+                        Hi. My name is Yves and I'm a software developer. I was
+                        always interested into how computers worked, and the
+                        first time I saw someone open DevCpp, write a program
+                        and run it in the terminal, I was mesmerized. I remember
+                        I tried to mimic it and failed! I've come a long way
+                        since then! <br />
+                        A lot of time has passed since then, I've had the
+                        privilege to learn a lot of computer related concepts,
+                        and recently, I've decided to focus on software
+                        development. I'm currently learning web development at
+                        <a href="https://www.andela.com" class="company_link"
+                            >Andela</a
+                        >
+                    </p>
+                </div>
+                <div id="skills_section">
+                    <p id="skills_section_title">Skills</p>
+                    <ul id="skills_list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Django</li>
+                        <li>Ansible</li>
+                    </ul>
+                </div>
+                <div id="experiences_section">
+                    <p id="experiences_section_title">Past work experiences</p>
+                    <div id="experiences_showcase">
+                        <ul id="companies_list">
+                            <li data-tab-target="#andela" class="active">
+                                Andela
+                            </li>
+                            <li data-tab-target="#rbc">RBC</li>
+                            <li data-tab-target="#linuxjobber">Linuxjobber</li>
+                            <li data-tab-target="#klab">Klab</li>
+                            <li data-tab-target="#solvit">Solvit Africa</li>
+                        </ul>
+                        <div
+                            class="company_work_description active"
+                            data-tab-content
+                            id="andela"
+                        >
+                            <p class="work_title">
+                                Apprentice
+                                <a href="https://www.andela.com">@Andela</a>
+                            </p>
+                            <p class="work_duration">November 2022 - Present</p>
+                            <ul class="work_description">
+                                <li>Create portfolio website</li>
+                                <li>Work with NodeJS & Other JS Frameworks</li>
+                                <li>Work with different DBMS</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="company_work_description"
+                            data-tab-content
+                            id="rbc"
+                        >
+                            <p class="work_title">
+                                Intern
+                                <a href="https://www.rbc.gov.rw">@RBC | Rwanda Biomedical Center</a>
+                            </p>
+                            <p class="work_duration">May 2022 - October 2022</p>
+                            <ul class="work_description">
+                                <li>
+                                    Performing hardware and software
+                                    maintainance
+                                </li>
+                                <li>Daily database backup</li>
+                                <li>Router and VPN configuration</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="company_work_description"
+                            data-tab-content
+                            id="linuxjobber"
+                        >
+                            <p class="work_title">
+                                Intern
+                                <a href="https://www.linuxjobber.com">@Linuxjobber</a>
+                            </p>
+                            <p class="work_duration">June 2022 - July 2022</p>
+                            <ul class="work_description">
+                                <li>Developing Django Applications</li>
+                                <li>Deploying Django on AWS</li>
+                                <li>
+                                    Using AWS Websocket API Gateway with Django
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="company_work_description"
+                            data-tab-content
+                            id="klab"
+                        >
+                            <p class="work_title">
+                                Trainee
+                                <a href="https://www.klab.rw">@KLab</a>
+                            </p>
+                            <p class="work_duration">May 2022</p>
+                            <ul class="work_description">
+                                <li>
+                                    Created simple web pages with HTML and CSS
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="company_work_description"
+                            data-tab-content
+                            id="solvit"
+                        >
+                            <p class="work_title">
+                                Trainee
+                                <a href="https://www.solvit.africa/">@Solvit Africa</a>
+                            </p>
+                            <p class="work_duration">
+                                February 2022 - April 2022
+                            </p>
+                            <ul class="work_description">
+                                <li>Developing Django Web Applications</li>
+                                <li>Using Django Rest Framework</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
